@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.0.3",
+	"FriendlyName": "ADSCore Lite",
+	"Description": "Integrate Yandex advertising into your Android project",
+	"Category": "Advertising",
+	"CreatedBy": "VOORHU",
+	"CreatedByURL": "https://boosty.to/adscore",
+	"DocsURL": "https://github.com/voorhu/adscorelite/blob/master/DocEng.md",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e3aa986643c84ca99304d8762e547c13",
+	"SupportURL": "voorhu@gmail.com",
+	"EngineVersion": "5.4.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "ADSSettings",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "ADSNode",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Android"
+			]
+		}
+	]
+}
