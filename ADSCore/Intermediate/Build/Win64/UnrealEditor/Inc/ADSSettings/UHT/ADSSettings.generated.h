@@ -15,8 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ADSSETTINGS_ADSSettings_generated_h
 
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS_NO_PURE_DECLS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS_NO_PURE_DECLS \
@@ -28,6 +27,31 @@ public: \
 	DECLARE_SERIALIZER(UADSSettingsEditor) \
 	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
 
+
+
+#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS \
+private: \
+	static void StaticRegisterNativesUADSSettingsEditor(); \
+	friend struct Z_Construct_UClass_UADSSettingsEditor_Statics; \
+public: \
+	DECLARE_CLASS(UADSSettingsEditor, UObject, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/ADSSettings"), NO_API) \
+	DECLARE_SERIALIZER(UADSSettingsEditor) \
+	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
+
+
+
+#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UADSSettingsEditor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UADSSettingsEditor) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UADSSettingsEditor); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UADSSettingsEditor); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UADSSettingsEditor(UADSSettingsEditor&&); \
+	NO_API UADSSettingsEditor(const UADSSettingsEditor&); \
+public: \
+	NO_API virtual ~UADSSettingsEditor();
 
 
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ENHANCED_CONSTRUCTORS \
@@ -45,12 +69,22 @@ public: \
 
 
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_17_PROLOG
+#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA \
+	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS \
+	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ACCESSORS \
+	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS \
+	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS_NO_PURE_DECLS \

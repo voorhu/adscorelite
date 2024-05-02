@@ -10,7 +10,7 @@
 	"DocsURL": "https://github.com/voorhu/adscorelite/blob/master/DocEng.md",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e3aa986643c84ca99304d8762e547c13",
 	"SupportURL": "voorhu@gmail.com",
-	"EngineVersion": "5.3.0",
+	"EngineVersion": "5.2.0",
 	"CanContainContent": true,
 	"IsBetaVersion": true,
 	"Installed": true,
