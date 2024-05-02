@@ -1,6 +1,10 @@
 {
 	"OutputFiles": [
 		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\PCH.ADSNode.h.obj",
-		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\Module.ADSNode.cpp.obj"
+		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\Module.ADSNode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\ADSNode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\AdvertisingProvider.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\LoadNode.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\ADSNode\\ShowNode.cpp.obj"
 	]
 }

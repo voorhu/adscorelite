@@ -25,8 +25,6 @@ public class ADSNode : ModuleRules
             PrivateDependencyModuleNames.Add("Launch");
 
             string PluginPath = Utils.MakePathRelativeTo(ModuleDirectory, Target.RelativeEnginePath);
-            
-			
 
             AdditionalPropertiesForReceipt.Add("AndroidPlugin", Path.Combine(PluginPath, "ADSNode_UPL.xml"));
         }

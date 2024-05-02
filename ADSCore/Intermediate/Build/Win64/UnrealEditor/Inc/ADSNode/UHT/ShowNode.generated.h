@@ -19,15 +19,10 @@ class UShowNode;
 ADSNODE_API void FADdisplayStatus_DelegateWrapper(const FMulticastScriptDelegate& ADdisplayStatus);
 
 
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_SPARSE_DATA
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_RPC_WRAPPERS \
- \
 	DECLARE_FUNCTION(execshowInterstitial);
 
 
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesUShowNode(); \
@@ -45,8 +40,8 @@ public: \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UShowNode); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UShowNode(UShowNode&&); \
-	NO_API UShowNode(const UShowNode&); \
+	UShowNode(UShowNode&&); \
+	UShowNode(const UShowNode&); \
 public: \
 	NO_API virtual ~UShowNode();
 
@@ -55,11 +50,7 @@ public: \
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_SPARSE_DATA \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_RPC_WRAPPERS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_INCLASS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_ShowNode_h_28_STANDARD_CONSTRUCTORS \
 public: \

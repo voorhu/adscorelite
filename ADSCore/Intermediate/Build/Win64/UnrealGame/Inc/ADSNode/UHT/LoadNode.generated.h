@@ -19,17 +19,12 @@ class ULoadNode;
 ADSNODE_API void FADdownloadStatus_DelegateWrapper(const FMulticastScriptDelegate& ADdownloadStatus, int32 Status, const FString& errorMessage);
 
 
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_SPARSE_DATA
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_RPC_WRAPPERS \
- \
 	DECLARE_FUNCTION(execOnAdDownloadFailure); \
 	DECLARE_FUNCTION(execOnAdDownloadSuccess); \
 	DECLARE_FUNCTION(execloadInterstitial);
 
 
-#define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_INCLASS \
 private: \
 	static void StaticRegisterNativesULoadNode(); \
@@ -47,8 +42,8 @@ public: \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ULoadNode); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API ULoadNode(ULoadNode&&); \
-	NO_API ULoadNode(const ULoadNode&); \
+	ULoadNode(ULoadNode&&); \
+	ULoadNode(const ULoadNode&); \
 public: \
 	NO_API virtual ~ULoadNode();
 
@@ -57,11 +52,7 @@ public: \
 #define FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_SPARSE_DATA \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_RPC_WRAPPERS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_INCLASS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSNode_Public_LoadNode_h_28_STANDARD_CONSTRUCTORS \
 public: \

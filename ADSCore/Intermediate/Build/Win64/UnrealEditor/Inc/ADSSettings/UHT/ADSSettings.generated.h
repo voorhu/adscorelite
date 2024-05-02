@@ -14,11 +14,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ADSSETTINGS_ADSSettings_generated_h
 
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ACCESSORS
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUADSSettingsEditor(); \
@@ -35,8 +30,8 @@ public: \
 	NO_API UADSSettingsEditor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	NO_API UADSSettingsEditor(UADSSettingsEditor&&); \
-	NO_API UADSSettingsEditor(const UADSSettingsEditor&); \
+	UADSSettingsEditor(UADSSettingsEditor&&); \
+	UADSSettingsEditor(const UADSSettingsEditor&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UADSSettingsEditor); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UADSSettingsEditor); \
@@ -48,11 +43,6 @@ public: \
 #define FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ACCESSORS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_INCLASS_NO_PURE_DECLS \
 	FID_HostProject_Plugins_ADSCore_Source_ADSCore_Public_ADSSettings_h_20_ENHANCED_CONSTRUCTORS \
 private: \
