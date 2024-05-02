@@ -12,17 +12,6 @@ public class ADSSettings : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		PrecompileForTargets = PrecompileTargetsType.Any;
-		
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"CoreUObject",
-				"Engine",
-				"Slate",
-				"SlateCore",
-                "ADSNode"
-				// ... add private dependencies that you statically link with here ...	
-			}
-			);
+        PrivatePCHHeaderFile = "Public/ADSSettings.h";
 	}
 }
